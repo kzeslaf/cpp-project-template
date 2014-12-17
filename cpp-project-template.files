@@ -4,3 +4,7 @@ README.md
 src/main.cpp
 src/func.h
 src/func.cpp
+
+test/SConscript
+test/main.cpp
+test/func_test.cpp
