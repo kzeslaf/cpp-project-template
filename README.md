@@ -44,6 +44,10 @@ We're using [gtest](https://code.google.com/p/googletest/) library for creating 
 * test
 * third-party/gtest-1.7.0
 
+To run tests call following command in main dir of built project:
+
+    test/test
+
 
 TODO
 ----
