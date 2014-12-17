@@ -16,8 +16,13 @@ scons
 
 For the build system we are using [scons](http://www.scons.org).
 
-To build project call following command in project main dir: `scons`
-and to clean project call: `scons -c`.
+To build project call following command in project main dir:
+
+    scons
+
+and to clean project call:
+
+    scons -c
 
 
 Qt Creator IDE
