@@ -1,6 +1,8 @@
 cpp-project-template
 ====================
 
+[![Build Status](https://travis-ci.org/kzeslaf/cpp-project-template.svg?branch=master)](https://travis-ci.org/kzeslaf/cpp-project-template)
+
 This project is just simple C++ project template. This example shows use of
 such things like:
 
@@ -53,4 +55,3 @@ TODO
 ----
 
 * building .deb package
-* Travis CI
