@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+#
+# Generate .deb files in main project directory
+#
+override_dh_builddeb:
+	dh_builddeb --destdir=.
+
+#
+# Use Scons
+#
+override_dh_auto_build:
+	scons
+
+override_dh_auto_clean:
+	scons -c
+
+#
+#
+#
+%:
+	dh $@

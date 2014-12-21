@@ -1,7 +1,7 @@
 .sconsign.dblite
 *.user
 
-ypr_fib
+yprfib
 test/test
 
 src/*.o
@@ -9,3 +9,9 @@ test/*.o
 
 third-party/gtest-1.7.0/gtest-all.o
 third-party/gtest-1.7.0/libgtest.a
+
+*.deb
+
+debian/files
+debian/*.log
+debian/*.substvars
