@@ -51,7 +51,15 @@ To run tests call following command in main dir after building project:
     test/test
 
 
+Building .deb package
+---------------------
+
+To build .deb package call following command:
+
+    ./make.deb.sh
+
+
 TODO
 ----
 
-* building .deb package
+* project versioning
