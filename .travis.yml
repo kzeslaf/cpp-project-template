@@ -2,4 +2,4 @@ language: cpp
 compiler:
     - gcc
     - clang
-script: scons && test/test
+script: scons && test/test && ./make.deb.sh
