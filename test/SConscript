@@ -3,19 +3,17 @@ import os
 #
 # Build gtest
 #
-if not GetOption('clean'):
-    os.system('cd ../third-party/gtest-1.7.0 && make -f Makefile.ypr')
-else:
-    os.system('cd ../third-party/gtest-1.7.0 && make -f Makefile.ypr clean')
+SConscript('../third-party/gtest-1.7.0/SConscript')
+
 
 #
 #
 #
-cpppath = ['#src', '#third-party/gtest-1.7.0/include']
-libpath = ['#third-party/gtest-1.7.0']
+cpppath = ['../src', '../third-party/gtest-1.7.0/include']
+libpath = ['../third-party/gtest-1.7.0']
 libs = ['gtest', 'pthread']
 
 sources = Glob('*.cpp')
-sources += Glob('#src/func.o')
+sources += Glob('../src/func.o')
 
 Program('test', sources, CPPPATH=cpppath, LIBPATH=libpath, LIBS=libs)

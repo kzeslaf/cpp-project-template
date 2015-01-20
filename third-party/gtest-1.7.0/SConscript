@@ -1,0 +1,4 @@
+sources = ['./src/gtest-all.cc']
+cpppath = ['.', './include']
+
+StaticLibrary('gtest', sources, CPPPATH=cpppath)
