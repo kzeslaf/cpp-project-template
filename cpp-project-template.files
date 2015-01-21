@@ -5,6 +5,10 @@ src/main.cpp
 src/func.h
 src/func.cpp
 
+doc/source/index.doc
+doc/source/main.doc
+doc/source/func.doc
+
 test/SConscript
 test/main.cpp
 test/func_test.cpp
