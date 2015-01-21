@@ -51,6 +51,12 @@ To run tests call following command in main dir after building project:
     test/test
 
 
+Documentation
+-------------
+
+We're using [doxygen](http://doxygen.org) to create and build documentation.
+
+
 Building .deb package
 ---------------------
 

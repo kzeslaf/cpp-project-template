@@ -1,0 +1,8 @@
+/** \file func.h */
+
+
+/** \fn fib(int a)
+
+Documentation for function ``fib``...
+
+*/

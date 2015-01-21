@@ -1,5 +1,11 @@
 language: cpp
+
 compiler:
     - gcc
     - clang
-script: scons && test/test && ./make.deb.sh
+
+script: scons && test/test && ./make.deb.sh && cd doc && doxygen
+
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq doxygen

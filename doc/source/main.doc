@@ -1,0 +1,18 @@
+/** \file main.cpp */
+
+
+/** \var USAGE
+
+Documentation for variable USAGE...
+
+*/
+
+
+/** \fn main(int argc, char *argv[])
+
+List example
+
+1. point 1
+2. point 2
+
+*/
