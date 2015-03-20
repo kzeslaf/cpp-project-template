@@ -69,4 +69,3 @@ TODO
 ----
 
 * project versioning
-* check if the builds on travis-ci.org are really done with clang
