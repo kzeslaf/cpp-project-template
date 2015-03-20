@@ -1,10 +1,4 @@
-import os
-
-#
-# Build gtest
-#
-SConscript('../third-party/gtest-1.7.0/SConscript')
-
+Import('*')
 
 #
 #
@@ -16,4 +10,4 @@ libs = ['gtest', 'pthread']
 sources = Glob('*.cpp')
 sources += Glob('../src/func.o')
 
-Program('test', sources, CPPPATH=cpppath, LIBPATH=libpath, LIBS=libs)
+ENV.Program('test', sources, CPPPATH=cpppath, LIBPATH=libpath, LIBS=libs)
