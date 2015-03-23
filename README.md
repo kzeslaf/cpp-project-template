@@ -69,3 +69,4 @@ TODO
 ----
 
 * project versioning
+* travis ci: make clang++ build work
