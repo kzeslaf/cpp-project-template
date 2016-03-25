@@ -1,35 +1,37 @@
-import os
-
-
 #
-# Defaults
-#
-# You can override defaults with environment variables,
+# You can override default compilers with environment variables,
 # example:
 #
 #    CC=clang CXX=clang++ scons
 #
-CC = 'gcc'
-CXX = 'g++'
+
+
+import os
+
+
+#
+#
+#
+cppflags = [
+    '-Wall', '-Wextra',
+    '-g', '-O2',
+]
 
 
 #
 # Environment
 #
-cppflags = []
-cppflags += ['-Wall', '-Wextra']
-cppflags += ['-g', '-O2']
-
 ENV = Environment(CPPFLAGS=cppflags)
-ENV['CC'] = os.environ.get('CC', CC)
-ENV['CXX'] = os.environ.get('CXX', CXX)
+
+ENV['CC'] = os.environ.get('CC', ENV['CC'])
+ENV['CXX'] = os.environ.get('CXX', ENV['CXX'])
 
 
 #
 #
 #
 cpppath = ['src']
-sources = ['src/main.cpp', 'src/func.cpp']
+sources = Glob('src/*.cpp')
 
 ENV.Program('yprfib', sources, CPPPATH=cpppath)
 
