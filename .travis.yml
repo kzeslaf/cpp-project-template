@@ -3,7 +3,7 @@ language: cpp
 compiler:
     - gcc
 
-script: scons && test/test && ./make.deb.sh && cd doc && doxygen
+script: scons && test/test && cd doc && doxygen
 
 before_install:
     - sudo apt-get update -qq

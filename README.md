@@ -57,14 +57,6 @@ Documentation
 We're using [doxygen](http://doxygen.org) to create and build documentation.
 
 
-Building .deb package
----------------------
-
-To build .deb package call following command:
-
-    ./make.deb.sh
-
-
 TODO
 ----
 
