@@ -1,13 +1,15 @@
-sudo: required
-dist: trusty
+# sudo: required
+# dist: trusty
 
-language: cpp
+language:
+    - cpp
 
 compiler:
     - gcc
     - clang
 
-script: scons && test/test && cd doc && doxygen
+script:
+    - scons && test/test && cd doc && doxygen
 
 before_install:
     - sudo apt-get update -qq
