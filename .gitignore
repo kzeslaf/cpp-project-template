@@ -10,9 +10,3 @@ test/*.o
 third-party/gtest-1.7.0/src/*.o
 third-party/gtest-1.7.0/*.o
 third-party/gtest-1.7.0/libgtest.a
-
-*.deb
-
-debian/files
-debian/*.log
-debian/*.substvars
