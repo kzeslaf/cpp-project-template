@@ -63,3 +63,5 @@ TODO
 * project versioning
 * travis ci: don't install clang in g++ build
 * turn on C++11
+* use gtest as git submodule
+* make SConstruct for doxygen
