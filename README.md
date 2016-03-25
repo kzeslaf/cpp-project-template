@@ -62,3 +62,4 @@ TODO
 
 * project versioning
 * travis ci: don't install clang in g++ build
+* turn on C++11
