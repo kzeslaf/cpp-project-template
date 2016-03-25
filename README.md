@@ -16,7 +16,7 @@ This example has been created on Ubuntu 14.04.
 scons
 -----
 
-For the build system we are using [scons](http://www.scons.org).
+We are using [scons](http://www.scons.org) as a build system.
 
 To build project call following command in project main dir:
 
@@ -32,10 +32,10 @@ Qt Creator IDE
 
 For IDE we're using Qt Creator. Project data is written in following files:
 
-* cpp-project-template.creator
-* cpp-project-template.files
-* cpp-project-template.include
-* cpp-project-template.config
+* proj/qtcreator/cpp-project-template.creator
+* proj/qtcreator/cpp-project-template.files
+* proj/qtcreator/cpp-project-template.include
+* proj/qtcreator/cpp-project-template.config
 
 
 Unit Tests
@@ -61,4 +61,4 @@ TODO
 ----
 
 * project versioning
-* travis ci: make clang++ build work
+* travis ci: don't install clang in g++ build
