@@ -1,5 +1,5 @@
 before_build:
-    cmake -dgtest_force_shared_crt=on .
+    cmake -Dgtest_force_shared_crt=on .
 
 build:
     project: cpp-project-template.sln
