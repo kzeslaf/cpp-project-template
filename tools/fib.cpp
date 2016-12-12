@@ -6,7 +6,7 @@
 
 const char *USAGE = ""
         "Usage:\n"
-        "\t./yprfib NUMBER\n"
+        "\t./fib NUMBER\n"
         ;
 
 

@@ -1,4 +1,4 @@
-#include <func.h>
+#include "func.h"
 
 
 int fib(int a)

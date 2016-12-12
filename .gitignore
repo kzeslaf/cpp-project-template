@@ -1,12 +1,1 @@
-.sconsign.dblite
-*.user
-
-yprfib
-test/test
-
-src/*.o
-test/*.o
-
-third-party/gtest-1.7.0/src/*.o
-third-party/gtest-1.7.0/*.o
-third-party/gtest-1.7.0/libgtest.a
+build

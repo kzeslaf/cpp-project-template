@@ -1,8 +1,0 @@
-../../SConstruct
-../../doc/Doxyfile
-../../src/func.cpp
-../../src/func.h
-../../src/main.cpp
-../../test/SConscript
-../../test/func_test.cpp
-../../test/main.cpp
