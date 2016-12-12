@@ -1,0 +1,2 @@
+before_build:
+    cmake -dgtest_force_shared_crt=on .
