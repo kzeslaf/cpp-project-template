@@ -9,9 +9,14 @@ compiler:
     - clang
 
 script:
-    - scons && test/test && cd doc && doxygen
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+    - test/test-libmymath
+    - cd ../doc
+    - doxygen
 
 before_install:
     - sudo apt-get update -qq
-    - sudo apt-get install -qq clang
     - sudo apt-get install -qq doxygen
