@@ -4,7 +4,7 @@ before_build:
     - cmake -G "Visual Studio 14 2015 Win64" -Dgtest_force_shared_crt=on ..
 
 build_script:
-    - msbuild /p:Configuration=%CONFIGURATION% cpp-project-template.sln
+    - msbuild /v:minimal /p:Configuration=%CONFIGURATION% cpp-project-template.sln
  
 test_script:
     - test\%CONFIGURATION%\test-libmymath.exe
