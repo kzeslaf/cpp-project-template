@@ -1,1 +1,1 @@
-add_library(mymath func.cpp)
+add_library(mymath mymath.cpp)

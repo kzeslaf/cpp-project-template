@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <func.h>
+#include <mymath.h>
 
 const char *USAGE =
     ""
