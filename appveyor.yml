@@ -6,8 +6,8 @@ before_build:
 build_script:
     - msbuild /p:Configuration=%CONFIGURATION% cpp-project-template.sln
     
-after_build:
-    - dir
+test_script:
+    - x64/%CONFIGURATION%/test-libmymath.exe
 
 platform:
     - x64
