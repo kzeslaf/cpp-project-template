@@ -7,7 +7,7 @@ build_script:
     - msbuild /p:Configuration=%CONFIGURATION% cpp-project-template.sln
  
 after_build:
-    - dir *.exe
+    - dir *.exe /s
  
 #test_script:
 #- x64\%CONFIGURATION%\test-libmymath.exe
