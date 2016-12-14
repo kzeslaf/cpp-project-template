@@ -8,6 +8,9 @@ build_script:
  
 test_script:
     - test\%CONFIGURATION%\test-libmymath.exe
+    
+os:
+    - Visual Studio 2015
 
 platform:
     - x64
