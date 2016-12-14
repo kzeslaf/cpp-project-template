@@ -4,7 +4,6 @@ before_build:
     - cmake -G "Visual Studio 14 2015 Win64" -Dgtest_force_shared_crt=on ..
 
 build_script:
-    - cd build
     - msbuild /p:Configuration=%CONFIGURATION% cpp-project-template.sln
 
 platform:
