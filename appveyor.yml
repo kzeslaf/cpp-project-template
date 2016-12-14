@@ -5,6 +5,9 @@ before_build:
 
 build_script:
     - msbuild /p:Configuration=%CONFIGURATION% cpp-project-template.sln
+    
+after_build:
+    - dir
 
 platform:
     - x64
