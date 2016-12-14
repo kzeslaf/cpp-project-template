@@ -27,13 +27,3 @@ Documentation
 -------------
 
 We're using [doxygen](http://doxygen.org) to create and build documentation.
-
-
-TODO
-----
-
-* project versioning
-* travis ci: don't install clang in g++ build
-* turn on C++11
-* use gtest as git submodule
-* make SConstruct for doxygen
