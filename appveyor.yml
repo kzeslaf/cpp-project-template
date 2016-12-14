@@ -7,7 +7,7 @@ build_script:
     - msbuild /p:Configuration=%CONFIGURATION% cpp-project-template.sln
     
 test_script:
-    - x64/%CONFIGURATION%/test-libmymath.exe
+    - x64\%CONFIGURATION%\test-libmymath.exe
 
 platform:
     - x64
