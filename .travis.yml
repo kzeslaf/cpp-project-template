@@ -14,9 +14,3 @@ script:
     - cmake ..
     - make
     - test/test-libmymath
-    - cd ../doc
-    - doxygen
-
-before_install:
-    - sudo apt-get update -qq
-    - sudo apt-get install -qq doxygen
