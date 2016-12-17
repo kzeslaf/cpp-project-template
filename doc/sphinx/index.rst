@@ -7,6 +7,4 @@
 cpp-project-template
 ====================
 
-----
-
 Doxygen documention: `<./doxygen/index.html>`_
