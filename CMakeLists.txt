@@ -12,4 +12,4 @@ add_subdirectory(src)
 add_subdirectory(test)
 add_subdirectory(tools)
 
-add_subdirectory(third-party/gtest-1.7.0 EXCLUDE_FROM_ALL)
+add_subdirectory(third-party/gtest EXCLUDE_FROM_ALL)

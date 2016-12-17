@@ -20,7 +20,7 @@ Unit Tests
 We're using [gtest](https://code.google.com/p/googletest/) library for creating unit tests. See following dirs:
 
 * test
-* third-party/gtest-1.7.0
+* third-party/gtest
 
 
 Documentation
