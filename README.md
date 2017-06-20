@@ -14,6 +14,21 @@ such things like:
 This example has been created on Ubuntu 14.04.
 
 
+CMake
+-----
+
+References:
+
+* [(2015.05) Daniel Pfeifer: CMake Presentation](http://purplekarrot.net/blog/cmake-introduction-and-best-practices.html)
+* [(2017.05) Daniel Pfeifer: Effective CMake](https://www.youtube.com/watch?v=bsXLMQ6WgIk&t=2s)
+
+
+Documentation
+-------------
+
+We're using [doxygen](http://doxygen.org) to create and build documentation.
+
+
 Unit Tests
 ----------
 
@@ -21,9 +36,3 @@ We're using [gtest](https://code.google.com/p/googletest/) library for creating 
 
 * test
 * third-party/gtest
-
-
-Documentation
--------------
-
-We're using [doxygen](http://doxygen.org) to create and build documentation.
