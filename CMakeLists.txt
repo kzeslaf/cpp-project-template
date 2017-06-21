@@ -2,9 +2,15 @@ cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 project(cpp-project-template)
 
 
-if (NOT MSVC)
-    set(CMAKE_CXX_FLAGS "-Wall -Wextra -std=c++11 ${CMAKE_CXX_FLAGS}")
-endif (NOT MSVC)
+if (NOT KZESLAF_DEFAULT_WARNINGS)
+    if (CMAKE_COMPILER_IS_GNUCXX)
+        set(KZESLAF_DEFAULT_WARNINGS
+            -Wall
+            -Wextra
+            -Werror
+            )
+    endif(CMAKE_COMPILER_IS_GNUCXX)
+endif()
 
 
 add_subdirectory(doc)
