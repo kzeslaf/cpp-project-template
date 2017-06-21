@@ -22,6 +22,7 @@ References:
 * [(2015.05) Daniel Pfeifer: CMake Presentation](http://purplekarrot.net/blog/cmake-introduction-and-best-practices.html)
 * [(2017.05) Daniel Pfeifer: Effective CMake](https://www.youtube.com/watch?v=bsXLMQ6WgIk&t=2s)
 * [CMake FAQ on vtk.org](http://www.vtk.org/Wiki/CMake_FAQ)
+* [CMake Cross Compiling on vtk.org](http://www.vtk.org/Wiki/CMake_Cross_Compiling)
 
 
 Documentation
