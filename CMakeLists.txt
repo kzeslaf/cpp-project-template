@@ -2,14 +2,10 @@ cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 project(cpp-project-template)
 
 
-if (NOT KZESLAF_DEFAULT_WARNINGS)
-    if (CMAKE_COMPILER_IS_GNUCXX)
-        set(KZESLAF_DEFAULT_WARNINGS
-            -Wall
-            -Wextra
-            -Werror
-            )
-    endif(CMAKE_COMPILER_IS_GNUCXX)
+if (MSVC)
+    add_compile_options(/W3 /WX)
+else()
+    add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 endif()
 
 

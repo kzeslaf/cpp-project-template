@@ -12,8 +12,3 @@ target_link_libraries(test-libmymath
         mymath
         gtest
     )
-
-target_compile_options(test-libmymath
-    PRIVATE
-        ${KZESLAF_DEFAULT_WARNINGS}
-    )
