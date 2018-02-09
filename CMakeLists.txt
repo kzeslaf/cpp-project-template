@@ -5,7 +5,7 @@ project(cpp-project-template)
 if (MSVC)
     add_compile_options(/W3 /WX)
 else()
-    add_compile_options(-Wall -Wextra -Wpedantic -Werror)
+    add_compile_options(-Wall -Wextra -Werror)
 endif()
 
 
