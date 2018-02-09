@@ -3,10 +3,14 @@
 
 #include <mymath.h>
 
+namespace {
+
 const char *USAGE =
     ""
     "Usage:\n"
     "\t./fib NUMBER\n";
+
+}  // namespace
 
 int main(int argc, char *argv[]) {
   if (argc < 2) {
