@@ -2,8 +2,4 @@
 
 Hello ...
 
-\startuml{myimage.png} "Image Caption" width=5cm
-Alice -> Bob : Hello
-\enduml
-
 */
