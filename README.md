@@ -38,4 +38,4 @@ Unit Tests
 We're using [gtest](https://code.google.com/p/googletest/) library for creating unit tests. See following dirs:
 
 * test
-* third-party/gtest
+* third-party/googletest
