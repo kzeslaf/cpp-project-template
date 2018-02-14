@@ -22,6 +22,7 @@ add_subdirectory(third-party/googletest EXCLUDE_FROM_ALL)
 #
 add_custom_target(additional_project_files
     SOURCES
+        ${CMAKE_CURRENT_SOURCE_DIR}/.clang-format
         ${CMAKE_CURRENT_SOURCE_DIR}/.travis.yml
         ${CMAKE_CURRENT_SOURCE_DIR}/appveyor.yml
         ${CMAKE_CURRENT_SOURCE_DIR}/README.md
