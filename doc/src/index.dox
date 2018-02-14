@@ -1,5 +1,18 @@
 /** \mainpage cpp-project-template
 
-Hello ...
+This page contains examples of doxygen features.
+
+1. Example of C++ source code listing:
+
+\code{.cpp}
+int main(int argc, char *argv[]) {
+  printf("Hello\n");
+  return 0;
+}
+\endcode
+
+2. Example of \c snippet command usage:
+
+\snippet mymath.cpp fib_function
 
 */
