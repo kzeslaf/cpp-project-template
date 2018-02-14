@@ -3,6 +3,10 @@ dist: trusty
 
 language:
     - cpp
+    
+before_install:
+    - sudo apt-get update
+    - sudo apt-get install doxygen
 
 compiler:
     - clang
