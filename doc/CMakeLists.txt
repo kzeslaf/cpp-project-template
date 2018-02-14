@@ -1,7 +1,11 @@
 find_package(Doxygen)
 
 if (DOXYGEN_FOUND)
-    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile @ONLY)
+    configure_file(
+        ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in
+        ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+        @ONLY
+        )
 
     add_custom_target(doc-build-dir
         mkdir -p build
@@ -13,6 +17,13 @@ if (DOXYGEN_FOUND)
         ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
         WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
         COMMENT "Generating API documentation with Doxygen" VERBATIM
+
+        #
+        # List following files in QtCreator project tree.
+        #
+        SOURCES
+            ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in
+            ${CMAKE_CURRENT_SOURCE_DIR}/src/index.dox
         )
 
     add_dependencies(doc doc-build-dir)

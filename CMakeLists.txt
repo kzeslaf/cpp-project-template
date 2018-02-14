@@ -18,6 +18,17 @@ add_subdirectory(third-party/googletest EXCLUDE_FROM_ALL)
 
 
 #
+# List additional files in QtCreator project tree.
+#
+add_custom_target(additional_project_files
+    SOURCES
+        ${CMAKE_CURRENT_SOURCE_DIR}/.travis.yml
+        ${CMAKE_CURRENT_SOURCE_DIR}/appveyor.yml
+        ${CMAKE_CURRENT_SOURCE_DIR}/README.md
+    )
+
+
+#
 # Turn off warning about unused QT_QMAKE_EXECUTABLE added by QtCreator
 #
 unset(${QT_QMAKE_EXECUTABLE} CACHE)
