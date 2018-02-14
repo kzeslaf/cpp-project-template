@@ -19,7 +19,7 @@ import os
 #
 # Build doxygen
 #
-subprocess.call('cd .. ; doxygen', shell=True)
+subprocess.call(r"cd .. ; sed 's/@CMAKE_CURRENT_SOURCE_DIR@\///' Doxyfile.in > Doxyfile ; doxygen", shell=True)
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
