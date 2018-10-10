@@ -24,6 +24,7 @@ Presentations:
 * [(2015.05) Daniel Pfeifer: CMake Presentation](http://purplekarrot.net/blog/cmake-introduction-and-best-practices.html)
 
 References:
+* [CMake Primer on llvm.org](https://llvm.org/docs/CMakePrimer.html)
 * [CMake FAQ on vtk.org](http://www.vtk.org/Wiki/CMake_FAQ)
 * [CMake Cross Compiling on vtk.org](http://www.vtk.org/Wiki/CMake_Cross_Compiling)
 
