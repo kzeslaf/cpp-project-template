@@ -25,6 +25,8 @@ Presentations:
 
 References:
 * [CMake Primer on llvm.org](https://llvm.org/docs/CMakePrimer.html)
+* [Effective Modern CMake by Manuel Binna](https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1)
+
 * [CMake FAQ on vtk.org](http://www.vtk.org/Wiki/CMake_FAQ)
 * [CMake Cross Compiling on vtk.org](http://www.vtk.org/Wiki/CMake_Cross_Compiling)
 
