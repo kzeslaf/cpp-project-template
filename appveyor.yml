@@ -11,11 +11,20 @@ configuration:
     
 environment:
   matrix:
+    # Visual Studio 2015
     - TOOLCHAIN: v140
       STD: 14
+      
+    # Visual Studio 2017
     - TOOLCHAIN: v141
       STD: 14
     - TOOLCHAIN: v141
+      STD: 17
+      
+    # Visual Studio 2019
+    - TOOLCHAIN: v142
+      STD: 14
+    - TOOLCHAIN: v142
       STD: 17
 
 install:
