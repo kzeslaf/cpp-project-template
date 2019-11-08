@@ -8,6 +8,17 @@ platform:
 configuration:
     - Debug
     - Release
+    
+environment:
+  matrix:
+    - TOOLCHAIN: v140
+      STD: 14
+    - TOOLCHAIN: v140
+      STD: 17
+    - TOOLCHAIN: v141
+      STD: 14
+    - TOOLCHAIN: v141
+      STD: 17
 
 install:
     - git submodule init
@@ -18,7 +29,7 @@ before_build:
     - cd build
 
 build_script:
-    - cmake -A %PLATFORM% -T v140 -Dgtest_force_shared_crt=on ..
+    - cmake -A %PLATFORM% -T %TOOLCHAIN% -DCMAKE_CXX_STANDARD=%STD% -Dgtest_force_shared_crt=on ..
     - cmake --build . --config %CONFIGURATION%
  
 test_script:
