@@ -1,3 +1,10 @@
+image:
+    - Visual Studio 2019
+
+configuration:
+    - Debug
+    - Release
+
 install:
     - git submodule init
     - git submodule update
@@ -5,20 +12,10 @@ install:
 before_build:
     - mkdir build
     - cd build
-    - cmake -G "Visual Studio 14 2015 Win64" -Dgtest_force_shared_crt=on ..
 
 build_script:
-    - msbuild /v:minimal /p:Configuration=%CONFIGURATION% cpp-project-template.sln
+    - cmake -A Win64 -T v140 -Dgtest_force_shared_crt=on ..
+    - cmake --build . --config %CONFIGURATION%
  
 test_script:
     - test\%CONFIGURATION%\test-libmymath.exe
-    
-os:
-    - Visual Studio 2015
-
-platform:
-    - x64
-
-configuration:
-    - Debug
-    - Release
