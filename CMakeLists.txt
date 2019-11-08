@@ -14,7 +14,7 @@ add_subdirectory(src)
 add_subdirectory(test)
 add_subdirectory(tools)
 
-add_subdirectory(third-party/googletest EXCLUDE_FROM_ALL)
+add_subdirectory(3rd/googletest EXCLUDE_FROM_ALL)
 
 
 #
