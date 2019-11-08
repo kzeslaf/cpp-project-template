@@ -1,5 +1,9 @@
 image:
     - Visual Studio 2019
+    
+platform:
+    - Win32
+    - x64
 
 configuration:
     - Debug
@@ -14,7 +18,7 @@ before_build:
     - cd build
 
 build_script:
-    - cmake -A x64 -T v140 -Dgtest_force_shared_crt=on ..
+    - cmake -A %PLATFORM% -T v140 -Dgtest_force_shared_crt=on ..
     - cmake --build . --config %CONFIGURATION%
  
 test_script:
