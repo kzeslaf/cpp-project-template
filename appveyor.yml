@@ -14,7 +14,7 @@ before_build:
     - cd build
 
 build_script:
-    - cmake -A Win64 -T v140 -Dgtest_force_shared_crt=on ..
+    - cmake -A x64 -T v140 -Dgtest_force_shared_crt=on ..
     - cmake --build . --config %CONFIGURATION%
  
 test_script:
