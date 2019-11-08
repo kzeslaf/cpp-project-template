@@ -13,8 +13,6 @@ environment:
   matrix:
     - TOOLCHAIN: v140
       STD: 14
-    - TOOLCHAIN: v140
-      STD: 17
     - TOOLCHAIN: v141
       STD: 14
     - TOOLCHAIN: v141
