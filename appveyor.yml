@@ -37,7 +37,7 @@ before_build:
 
 build_script:
     - cmake -A %PLATFORM% -T %TOOLCHAIN% -DCMAKE_CXX_STANDARD=%STD% -Dgtest_force_shared_crt=on ..
-    - cmake --build . --config %CONFIGURATION%
+    - cmake --build . --config %CONFIGURATION% -- -verbosity:n
  
 test_script:
     - test\%CONFIGURATION%\test-libmymath.exe
