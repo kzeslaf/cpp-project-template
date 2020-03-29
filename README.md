@@ -1,7 +1,7 @@
 cpp-project-template
 ====================
 
-[![Travis CI Build Status](https://travis-ci.org/kzeslaf/cpp-project-template.svg?branch=master)](https://travis-ci.org/kzeslaf/cpp-project-template)
+![](https://github.com/kzeslaf/cpp-project-template/workflows/build-linux/badge.svg)
 ![](https://github.com/kzeslaf/cpp-project-template/workflows/build-windows/badge.svg)
 [![Documentation Status](https://readthedocs.org/projects/kzeslaf-cpp-project-template/badge/?version=latest)](http://kzeslaf-cpp-project-template.readthedocs.io/en/latest/?badge=latest)
 
