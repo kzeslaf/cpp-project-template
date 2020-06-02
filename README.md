@@ -12,8 +12,6 @@ such things like:
 * unit tests,
 * etc..
 
-This example has been created on Ubuntu 14.04.
-
 
 CMake
 -----
@@ -39,7 +37,8 @@ We're using [doxygen](http://doxygen.org) to create and build documentation.
 Unit Tests
 ----------
 
-We're using [Google Test](https://code.google.com/p/googletest/) library for creating unit tests. See following dirs:
+We're using [Google Test](https://code.google.com/p/googletest/) library for
+creating unit tests. See following dirs:
 
 * test
 * third-party/googletest
